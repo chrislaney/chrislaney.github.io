@@ -68,6 +68,11 @@ There were also some less than optimal solutions taken while coding this, such a
 Yes I used chatgpt in this project, it was especially helpful for navigating the d3 documentation. Shoutout my classmate Nate for solving the weird polygons on the choropleth with the solution of setting stateborders fill to none. 
 
 
+<video width="800" controls>
+  <source src="Data Viz Demo Recording-20250227_211921-Meeting Recording.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 
 
