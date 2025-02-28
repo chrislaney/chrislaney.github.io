@@ -68,11 +68,9 @@ There were also some less than optimal solutions taken while coding this, such a
 Yes I used chatgpt in this project, it was especially helpful for navigating the d3 documentation. Shoutout my classmate Nate for solving the weird polygons on the choropleth with the solution of setting stateborders fill to none. 
 
 
-<video width="800" controls>
-  <source src="Data Viz Demo Recording-20250227_211921-Meeting Recording.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe src="https://mailuc-my.sharepoint.com/personal/laneyct_mail_uc_edu/_layouts/15/embed.aspx?UniqueId=b7ff3f1e-9e01-4c36-a0a5-2c8c621a5931&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Data Viz Demo Recording-20250227_211921-Meeting Recording.mp4"></iframe>
 
+If the link does not work, please see that the mp4 for the demo is included in the githubio directory [here](https://github.com/chrislaney/chrislaney.github.io/blob/main/Data%20Viz%20Demo%20Recording-20250227_211921-Meeting%20Recording.mp4) and is available to download.
 
 
 
