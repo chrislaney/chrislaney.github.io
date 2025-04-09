@@ -1,8 +1,29 @@
 # [github/chrislaney](https://github.com/chrislaney)
 # [chrislaney.net](https://chrislaney.net)
 
-
 This portfolio portion of my github was made to display my work in CS 5124 - VISUAL INTERFACES DATA at University of Cincinnati
+
+# Vis in the wild assignment -- EARTHQUAKE PROJECT BELOW THIS.
+
+[Music Map Site Here](https://musicmap.info/)
+
+
+![MM1](./MM1.png)
+![MM2](./MM2.png)
+
+This is a website shows a genealogical map of many subgenres along with their parent and child genres ie genre influences, think rock to punk rock to grunge rock. Along with time period, and lines connecting to where they get influences from. The data that was used for this was done in a research like method, more qualitative than quantitative and it is mainly the names of many subgenres and then on a graph, how they connect to other genres and what super genre they fall into. The users of something like this would be anyone that is interested in music! Which is super nice, I think most people can find their niche or taste in here, and from there branch out and explore other genres they might find interesting, in a non algorithmic spotify type of way. The goals of this, as stated by the website were to inform anyone regardless of race, age education about the basics of music. To inspire people to explore the world of music. To improve the existing music genre database. To motivate the use of genres while discouraging pigeonholing. Reduce discrimination and prejudice based on genre.
+
+Use of the website; For finding a genre and then finding what genres influence that genre. Click on a genre, then you receive all the influences and parent genres from it, and can explore from there. There are these white swaths encompassing some genres within the super genre, and I would almost call those a “family” where anything in a swath is very related, not necessarily influential of each other but certainly related. 
+
+![MM3](./MM3.png)
+![MM4](./MM4.png)
+
+
+The visual interactions are really good and the site is smooth. I would say it is really crowded, especially with all the lines there is a lot to parse through and its easy to get lost. However I think when you are dealing with this sort of data and also as many features as they have its sort of unavoidable but I think they do it really well. Not to mention it is very fast and responsive so that makes up for getting lost in it. 
+
+One limitation is that it is hard to see where geographically these trends emerged. I wish they did a better job of that. Obviously there would need to be a completely different map for that because its so difficult but it would be cool to see over time where these trends and genres emerged. 
+
+
 
 # Earthquakes Around The Globe
 
