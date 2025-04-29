@@ -1,7 +1,117 @@
 # [github/chrislaney](https://github.com/chrislaney)
 # [chrislaney.net](https://chrislaney.net)
 
+
 This portfolio portion of my github was made to display my work in CS 5124 - VISUAL INTERFACES DATA at University of Cincinnati
+
+
+# Project 3; TV Show
+
+
+### Project Topic and Motivation:
+
+Our team chose the TV show SpongeBob SquarePants which first aired on Nickelodeon in 1999 and is still releasing new episodes today. We made this decision mainly due to multiple team members having enjoyed the show while growing up, the cultural impact of this show on many people as well as the series including many memorable recurring characters. These characters interact in many settings and engage in unique exchanges of dialogue which makes for some very interesting visualization potential.
+
+### Data Collection and Processing:
+
+The data for this project was collected in two different ways. The first was the collection of the transcripts for each individual episode and the second was collecting the list of episodes for each season. This was done simply due to what data was available online.
+
+Episode Transcripts: https://www.kaggle.com/datasets/mikhailgaerlan/spongebob-squarepants-completed-transcripts?resource=download
+ 
+Sample Episode List: https://thetvdb.com/series/spongebob-squarepants/seasons/official/1
+
+The list of episodes from each season was scraped from the website listed above by using the IMPORTHTML function in google sheets. These imported lists were then compiled into a single master csv file which listed all of the episodes with their season, episode number, title and airdate. This csv was used to match against the episode transcript files and then create the final csv data files with all the needed information.
+
+This process was accomplished with a short python script which read in all of the transcript files obtained from the link above and processed them into a csv format. Using all of this information the following csv header list was arrived at:
+
+Id, speaker, speech, context, raw-dialouge, season, episode, title, airdate, runtime
+
+Each line of dialogue has a unique id for various purposes. The python script identified the speaker of the dialogue, what words that speaker said and then also any context clues that were included in that line. The transcripts often included bracketed context clues within the speech which indicated things like the speakers emotions or actions in the scene. These were separated for easier access in the script. The other csv headers are self-explanatory and were pulled from the complete episode list file that was created by web scraping. The main functions of the python script can be seen below:
+
+![TVFig1](./TVFig1.png)
+
+The above method creates a usable list of all the episodes so that this information can be matched and extracted in the next step.
+
+The above method will read in the episodes dictionary that was just created and then loop through each episode transcript file. If an episode name is matched then that episode data is used to write the csv. The speaker, speech and context are parsed from the transcript for each line and then added to a list of data to be written. Both a complete csv with every episode’s data and individual season csv files are written with this script.
+
+### Visualization Components and Layout:
+
+Initial Sketch -
+
+![TVFig4](./TVFig4.png)
+
+Our visualizations start off with our title page, we wanted to have a strong theme tied to the show:
+
+![TVFig5](./TVFig5.png)
+
+Next we wanted to include a page which would introduce our audience to the data being used. If someone was unfamiliar with the show it would be important for them to have some context and look through the important characters:
+
+![TVFig6](./TVFig6.png)
+
+The purpose of our first visualization is to allow a user to explore line metrics for each of the characters. We wanted to allow someone to select a character and see how many lines were spoken by the character across the different episodes and seasons. A user can hover on an episode so that they can see the title and the number of lines spoken:
+
+![TVFig7](./TVFig7.png)
+
+As an additional view for this character selection, we wanted to show some broader metrics for all the characters in comparison to the selected character. In this bar graph, one can see the selected character highlighted and compare their total lines spoken to the lines spoken of the other characters. If the user is not interested in the lines spoken metric, they could also choose to see the number of episodes appeared in or words spoken metrics using the drop down menu:
+
+![TVFig8](./TVFig8.png)
+
+Next we wanted to create a nice visualization to see the most common words spoken by the selected character. We went with a word cloud for this and the visualization will change so that it also reflects the chosen character. Common words were filtered out:
+
+![TVFig9](./TVFig9.png)
+
+We also wanted to include a plot of all the characters spoken lines against the number of episodes that they appeared in. This is to show how relevant certain characters are to the show compared to others:
+
+![TVFig10](./TVFig10.png)
+
+For a special visualization we thought it would be interesting to see the calculated sentiment of the lines spoken between the characters of the show and the main character SpongeBob. We used some sentiment analysis and machine learning tools to create these sentiment findings and then plotted the characters sentiments:
+
+![TVFig11](./TVFig11.png)
+
+Throughout our visualizations we wanted to make the views large enough and in a meaningful arrangement. Because of this we chose to make our application span multiple pages instead of trying to get everything onto a single dashboard. This way we could introduce the data and then walk a user through the visualizations for each character. We also chose to stay on theme with the ocean and made the color theming and color gradients all shades of blue and light green.
+
+Finally, we created a visualization for showing the interactions between characters in the show on a per episode basis. The connections between characters are weighted by the number of interactions and a tooltip can be displayed when hovering the connections to show this number:
+
+![TVFig12](./TVFig12.png)
+
+
+
+Process:
+
+Project Code Repo: https://github.com/chendrix99/DataVisProject3
+
+Hosted Site: https://chendrix99.github.io/DataVisProject3/
+
+Our project can be accessed from the above link to the hosted GitHub pages version or the code can be cloned and then built locally in VS Code.
+
+For the data processing we used simple libraries like python’s csv, os and re libraries for cleaning the data and writing to the csv files. For the sentiment analysis processing the python libraries DistilBERT were used for analysis. 
+
+The code was structured similarly to previous projects with a separate data, js, and css folders and a main index.html at the root.
+
+Demo:
+
+[@Screen Recording 2025-04-25 at 3.26.01 PM.mov](https://drive.google.com/file/d/1XAmQcyNKxFwjpjOs6fyyTTddvshjs-gV/view?usp=sharing)
+Contributions:
+
+Chris Laney - Implementation of level 3 goals including the network visualization.
+
+Yale Miller - Implementation of level 1 goals and also initial design sketches.
+
+Prabh Singh - Implementation of level 2 goals including the word cloud visualization.
+
+Jake Huseman - Implementation of level 4 goals including the sentiment analysis visualization.
+
+Caleb Hendrix - Data collection and preprocessing as well as the documentation requirements.
+
+
+
+
+
+
+
+
+
+
 
 # Vis in the wild assignment -- EARTHQUAKE PROJECT BELOW THIS.
 
